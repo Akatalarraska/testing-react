@@ -1,15 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
-function Header() {
-  return (
-    <h1>Hello World</h1>  
-  );
-}
+import Nav from './components/Nav.jsx';
+import Intro from './components/Intro.jsx';
+import Intro2 from './components/Intro2.jsx';
+import Intro3 from './components/Intro3.jsx';  
+import Footer from './components/Footer.jsx';
 
 function App(){
   return (
-      <Header />
+    <>
+      <Nav />
+      <Intro />
+      <Intro2 />
+      <Intro3 />
+      <Footer />
+    </>
   );
 }
 
