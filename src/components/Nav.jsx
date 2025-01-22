@@ -1,13 +1,19 @@
+import { Link, Route, Routes } from "react-router-dom";
+import AboutMe from "./AboutMe";
+import HomePage from "./HomePage";
+
 function Nav() {
   return (
-    <nav className="main-nav">
-            <ul>
-                <li>Home</li>
-                <li>Articles</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
+    <div>
+        <nav className="main-nav">
+            <Link to="/">Home</Link>
+            <Link to="/about-me">About Me</Link>
         </nav>
+        <Routes>
+        <Route path="/" elementa={<HomePage />} />
+        <Route path="/about-me" elementa={<AboutMe />} />
+        </Routes>
+    </div>
   );
 }
 
