@@ -1,6 +1,6 @@
 import './App.css'; 
 import {useState} from "react"; 
-
+ 
 const PasswordErrorMessage = () => { 
     return ( 
       <p className="FieldError">Password should have at least 8 characters</p> 
@@ -118,6 +118,7 @@ function FormRegister() {
                 <option value="role">Role</option> 
                 <option value="individual">Individual</option> 
                 <option value="business">Business</option> 
+                <option value="group">Group</option> 
               </select> 
             </div> 
             <button type="submit" disabled={!getIsFormValid()}> 
