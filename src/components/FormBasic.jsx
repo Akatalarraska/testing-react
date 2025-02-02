@@ -1,3 +1,5 @@
+import {useState} from "react"; 
+
 function FormBasic(){
     const [name, setName] = useState('');
     const [score, setScore] = useState('');
