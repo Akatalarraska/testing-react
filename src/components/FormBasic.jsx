@@ -30,7 +30,7 @@ function FormBasic(){
                         onChange={e => setScore(e.target.value)}/>
                     </div>
                     <div className="field">   
-                        <label htmlFor="comment">Comment: {score}</label>
+                        <label htmlFor="comment">Comment: </label>
                         <textarea id="comment"   name="comment" value={comment} 
                         onChange={e => setComment(e.target.value)}/>
                     </div>
